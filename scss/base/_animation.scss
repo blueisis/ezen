@@ -1,0 +1,38 @@
+// common
+@keyframes visual-title-anime {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes Arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes lineMove {
+  0% {
+    bottom: 200px;
+    height: 0px;
+  }
+  20% {
+    bottom: 0;
+    height: 200px;
+  }
+  40% {
+    bottom: 0;
+    height: 0;
+  }
+  100% {
+    bottom: 0;
+    height: 0;
+  }
+}

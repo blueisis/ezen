@@ -1,0 +1,87 @@
+.project {
+  // 웰컴 섹션
+  #projects {
+    position: relative;
+    width: 100%;
+    padding: 8vw 5vw;
+    background-color: black;
+    z-index: 5;
+
+    .menu {
+      margin-bottom: 30px;
+
+      ul {
+        li {
+          margin-left: 0;
+          margin-right: 10px;
+
+          a {
+            font: 17px/1 'Lexend';
+            letter-spacing: 0px;
+            color: #fff;
+
+            &::after {
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .inner {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      z-index: 3;
+
+      // .txts {
+      //   position: relative;
+
+      //   h1 {
+      //     font: 45px/1 'gt-sectra';
+      //     color: var(--main-color);
+      //     margin-bottom: 40px;
+
+      //     span {
+      //       font: 43px/1 'gotham';
+      //       letter-spacing: -0.5px;
+      //     }
+      //   }
+
+      //   p {
+      //     font: 15px/2 'messina-sans';
+      //     color: var(--main-color);
+      //     opacity: 0.8;
+      //     margin-bottom: 50px;
+      //   }
+      // }
+
+      .project_con {
+        width: 33%;
+        color: #fff;
+
+        .pic {
+          width: 100%;
+          padding-bottom: 20px;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        h3 {
+          font: 15px/1 'Lexend';
+          margin-bottom: 5px;
+        }
+
+        span {
+          font: 14px/1 'Lexend';
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
