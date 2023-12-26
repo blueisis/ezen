@@ -6,7 +6,7 @@
     justify-content: space-between;
     position: relative;
     width: 100%;
-    padding: 8vw 0 5vw;
+    padding: 15vw 0 5vw;
     padding-left: 8vw;
     background-color: white;
 
@@ -14,14 +14,31 @@
       position: relative;
       z-index: 3;
 
+      h3, span {
+        transform: translateY(50px); 
+        opacity: 0;  
+        animation: project-ani  1s cubic-bezier(0.22, 0.61, 0.36, 1);
+        animation-fill-mode: forwards;
+      }
+
       h3 {
         font: 15px/1 'Lexend';
         margin-bottom: 7px;
+        animation-delay: 0.1s;
       }
 
       span {
+        display: inline-block;
         font: 15px/1.5 'Lexend';
         font-weight: 200;
+      }
+
+      span:nth-of-type(1) {
+        animation-delay: 0.2s;
+      }
+
+      span:nth-of-type(2) {
+        animation-delay: 0.3s;
       }
 
       .scroll-line {
@@ -98,7 +115,7 @@
     height: 100%;
     background-color: white;
     padding: 200px;
-    z-index: 4;
+    z-index: 1000;
 
     img {
       width: 100%;

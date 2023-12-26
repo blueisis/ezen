@@ -1,264 +1,301 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ezenhome/about</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- 스와이퍼 -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/fd8cd5fc39.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script defer src="js/project.js"></script>
-  </head>
 
-  <body>
-    <!-- 헤더 -->
-    <header id="header">
-      <div class="inner">
-        <a class="logo" href="index.html">
-          <img src="img/logo.png" alt="로고이미지" />
-        </a>
-        <nav class="header-menu">
-          <ul>
-            <li>
-              <a href="about.html">ABOUT</a>
-            </li>
-            <li>
-              <a href="youtube.html">PROJECT</a>
-            </li>
-            <li>
-              <a href="gallery.html">SHOP</a>
-            </li>
-            <li>
-              <a href="community.html">OFFICE</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTACT</a>
-            </li>
-            <!-- <li class="menuBtn">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ezenhome/about</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/fd8cd5fc39.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/project.js"></script>
+</head>
+
+<body>
+
+  <div id="load">
+    <img src="./img/loading.gif" alt="loading">
+  </div>
+  
+  <!-- 헤더 -->
+  <header id="header_sub">
+    <div class="inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-black.png" alt="로고이미지" />
+      </a>
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="youtube.html">PROJECT</a>
+          </li>
+          <li>
+            <a href="gallery.html">SHOP</a>
+          </li>
+          <li>
+            <a href="community.html">OFFICE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <!-- <li class="menuBtn">
               <span>menu button</span>
             </li> -->
-          </ul>
-        </nav>
-        <div class="header-btn-menu">
-          <ul>
-            <li>
-              <a href="about.html">About DLC</a>
-            </li>
-            <li>
-              <a href="youtube.html">Youtube</a>
-            </li>
-            <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="community.html">Community</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-            <li>
-              <a href="join.html">Join</a>
-            </li>
-          </ul>
-          <button class="menuClose">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
+        </ul>
+      </nav>
+      <div class="header-btn-menu">
+        <ul>
+          <li>
+            <a href="about.html">About DLC</a>
+          </li>
+          <li>
+            <a href="youtube.html">Youtube</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="community.html">Community</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="join.html">Join</a>
+          </li>
+        </ul>
+        <button class="menuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- 메인 콘텐츠 -->
-    <main class="sub-content project">
-      <!-- 비주얼 섹션 -->
-      <!-- <section id="visual_sub">
-        <img src="img/garden-img1.jpg" alt="비주얼 이미지">
+  <!-- 메인 콘텐츠 -->
+  <main class="sub-content project">
 
-        <div class="scroll-down">
-          <span>Scroll to explore</span>
-        </div>
-        <p class="scroll-line"></p>
-      </section> -->
+    <!-- 프로젝트 섹션 -->
+    <section id="projects">
+      <div class="menu">
+        <a href="#" class="menu_top">
+          <span>all</span>
+          <img src="./img/icon_arrow_under.png" alt="">
+        </a>
+        <ul>
+          <li>
+            <a href="#">기타화초</a>
+          </li>
+          <li>
+            <a href="#">조경용수목</a>
+          </li>
+        </ul>
+      </div>
 
-      <!-- 프로젝트 섹션 -->
-      <section id="projects">
-          <div class="menu">
-            <ul>
-                <li>
-                  <a href="#">기타화초</a>
-                </li>
-                <li>
-                  <a href="#">조경용수목</a>
-                </li>
-              </ul>
-          </div>
-          
-        <div class="inner">
-          <!-- <div class="txts">
-            <h1>
-              Welcome to <br />
-              <span>our world</span>
-            </h1>
-            <p>
-              Discover the unique atmosphere of our private <br />
-              residential club communities. Once experienced. Never
-              <br />
-              forgotten. This is classic, comfortable, modern living in <br />
-              nature’s most spectacular settings worldwide.
-              <br />
-              Reassuringly exclusive. Generously welcoming. Find <br />
-              your unique world – a place where families love to be; <br />
-              creating unforgettable moments, together.
-            </p>
-          </div> -->
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3></h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-<a href="project-detail.html" class="project_con">
-  <figure class="pic">
-    <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
-  </figure>
-  <h3>부천 미도어린이공원</h3>
-  <span>Outdoor Garden</span>
-</a>
-        </div>
-      </section>
-
-      <!-- 컨택트 섹션 -->
-      <section id="contact">
-        <div class="inner">
-            <div class="txts">
-              <h2>031-000-000</h2>
-              <p>E-mail eg-garden@naver.com</p>
-            </div>
-            <a href="#" class="button">
-              <div class="btn_borders">
-                <span class="border-top"></span>
-                <span class="border-right"></span>
-                <span class="border-bottom"></span>
-                <span class="border-left"></span>
-              </div>
-              <div class="btn_text-top">CONTACT FORM</div>
-              <div class="btn_text-bottom">CONTACT FORM</div>
+      <ul id="list">
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>미도어린이공원</h3>
             </a>
+            <a href="#"><span>Bucheon, Outdoor Garden</span></a>
           </div>
-        </div>
-      </section>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
 
-      <!-- 백그라운드 라인 -->
-      <div id="back-line">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </main>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+        <li class="item">
+          <a href="project-detail.html" class="project_pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <div class="project_title">
+            <a href="#">
+              <h3>부천 미도어린이공원</h3>
+            </a>
+            <a href="#"><span>Outdoor Garden</span></a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <!-- 푸터 -->
-    <footer id="footer">
+    <!-- 컨택트 섹션 -->
+    <section id="contact">
       <div class="inner">
-        <a class="footer-logo" href="#">
-          <img src="img/logo-black.png" alt="로고이미지" />
+        <div class="txts">
+          <h2>031-000-000</h2>
+          <p>E-mail eg-garden@naver.com</p>
+        </div>
+        <a href="#" class="button">
+          <div class="btn_borders">
+            <span class="border-top"></span>
+            <span class="border-right"></span>
+            <span class="border-bottom"></span>
+            <span class="border-left"></span>
+          </div>
+          <div class="btn_text-top">CONTACT FORM</div>
+          <div class="btn_text-bottom">CONTACT FORM</div>
         </a>
-        <div class="footer-menu">
-          <ul>
-            <li>GET IN TOUCH</li>
-            <li><a href="#">(031) 627-5791</a></li>
-            <li><a href="#">eg-garden@naver.com</a></li>
+      </div>
+      </div>
+    </section>
 
-          </ul>
-          <ul>
-            <li>
-              <a href="about.html">ABOUT</a>
-            </li>
-            <li>
-              <a href="youtube.html">PROJECT</a>
-            </li>
-            <li>
-              <a href="gallery.html">SHOP</a>
-            </li>
-            <li>
-              <a href="community.html">OFFICE</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTACT</a>
-            </li>
-            <!-- <li class="menuBtn">
+    <!-- 백그라운드 라인 -->
+    <div id="back-line">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="inner">
+      <a class="footer-logo" href="#">
+        <img src="img/logo-black.png" alt="로고이미지" />
+      </a>
+      <div class="footer-menu">
+        <ul>
+          <li>GET IN TOUCH</li>
+          <li><a href="#">(031) 627-5791</a></li>
+          <li><a href="#">eg-garden@naver.com</a></li>
+
+        </ul>
+        <ul>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="youtube.html">PROJECT</a>
+          </li>
+          <li>
+            <a href="gallery.html">SHOP</a>
+          </li>
+          <li>
+            <a href="community.html">OFFICE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <!-- <li class="menuBtn">
               <span>menu button</span>
             </li> -->
-          </ul>
-        </div>
-        <div class="copyright">
-          &copy; Gardening Group EZEN. All rights reserved.
-        </div>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="copyright">
+        &copy; Gardening Group EZEN. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

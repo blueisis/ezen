@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ezenhome/about</title>
+    <title>ezenhome/contact</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
@@ -20,20 +20,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script defer src="js/about.js"></script>
+    <script defer src="js/contact.js"></script>
   </head>
 
   <body>
-
     <div id="load">
-      <img src="./img/loading.gif" alt="loading">
+      <img src="./img/loading.gif" alt="loading" />
     </div>
-    
+
     <!-- 헤더 -->
-    <header id="header">
+    <header id="header_sub">
       <div class="inner">
         <a class="logo" href="index.html">
-          <img src="img/logo.png" alt="로고이미지" />
+          <img src="img/logo-black.png" alt="로고이미지" />
         </a>
         <nav class="header-menu">
           <ul>
@@ -41,7 +40,7 @@
               <a href="about.html">ABOUT</a>
             </li>
             <li>
-              <a href="project.html">PROJECT</a>
+              <a href="youtube.html">PROJECT</a>
             </li>
             <li>
               <a href="gallery.html">SHOP</a>
@@ -86,76 +85,64 @@
     </header>
 
     <!-- 메인 콘텐츠 -->
-    <main class="sub-content about">
+    <main class="sub-content contact">
       <!-- 비주얼 섹션 -->
-<section id="visual_sub">
+      <!-- <section id="visual_sub">
         <img src="img/garden-img1.jpg" alt="비주얼 이미지">
 
         <div class="scroll-down">
           <span>Scroll to explore</span>
         </div>
         <p class="scroll-line"></p>
-      </section>
+      </section> -->
 
-      <!-- 소개 섹션 -->
-      <section id="introduce">
-        <div class="inner">
-          <div class="txt">
-            <h1>이젠식물원은</h1>
-            <p>
-              공간 특성에 맞는 실내외조경디자인을 제안하고<br>
-              관공서 납품 · 특화화단 및 조경식재 · 경관을 연출합니다. <p>
-            <p>새로운 기술의 변화, 새로운 생각, 새로운 접근방향을 통해<br>
-              모든 계층이 함께 공감할 수 있는<br>
-              사람과 식물 사이의 문화를 만들어 갑니다.
-            </p>
-            <span>from now on!</span>
-          </div>
-<figure>
-            <img src="./img/garden-img6.jpg" alt="our-misson 이미지">
-          </figure>
+      <!-- contactus 섹션 -->
+      <section id="contactus">
+        <div class="contact_top">
+          <img src="./img/map.PNG" alt="" />
+          <p>Email eg-garden@naver.com</p>
+          <p>
+            서울지사 ㉾05849 서울시 송파구 위례광장로 188 아이온스퀘어 1001호
+          </p>
+          <p>TEL 031-627-5500 FAX 031-627-5791</p>
         </div>
-      </section>
 
-      <section id="works">
-        <div class="work">
-          <div class="pic">
-            <img src="img/garden-img3.JPG" alt="works 이미지">
-          </div>
-          <div class="content">
-            <h2>Experiences</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque necessitatibus mollitia autem minima
-              et, totam nesciunt, tempore suscipit blanditiis sint tempora labore enim cupiditate.</p>
-          </div>
-        </div>
-        <div class="work">
-          <div class="pic">
-            <img src="img/garden-img7.jpg" alt="works 이미지">
-          </div>
-          <div class="content">
-            <h2>Wellness</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, non libero sint corrupti porro fugiat.</p>
-          </div>
-        </div>
-      </section>
-  
-      <!-- 컨택트 섹션 -->
-      <section id="contact">
         <div class="inner">
-            <div class="txts">
-              <h2>031-000-000</h2>
-              <p>E-mail eg-garden@naver.com</p>
-            </div>
-            <a href="#" class="button">
-              <div class="btn_borders">
-                <span class="border-top"></span>
-                <span class="border-right"></span>
-                <span class="border-bottom"></span>
-                <span class="border-left"></span>
+          <!-- <img src="img/garden-img1.jpg"> -->
+          <div class="con">
+            <p>Take the first step towards discovering your perfect world.</p>
+            <form id="contact-form">
+              <input type="hidden" name="contact_number" />
+              <input type="text" required placeholder="Name" name="user_name" />
+              <input
+                type="text"
+                required
+                placeholder="Mobile Number"
+                name="user_number"
+              />
+              <input
+                type="text"
+                required
+                placeholder="Email Address"
+                name="user_email"
+              />
+              <textarea
+                required
+                placeholder="Write your message here"
+                name="user_message"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <div class="btn-box">
+                <input type="submit" value="Send" />
+                <div class="btn_borders">
+                  <span class="border-top"></span>
+                  <span class="border-right"></span>
+                  <span class="border-bottom"></span>
+                  <span class="border-left"></span>
+                </div>
               </div>
-              <div class="btn_text-top">CONTACT FORM</div>
-              <div class="btn_text-bottom">CONTACT FORM</div>
-            </a>
+            </form>
           </div>
         </div>
       </section>
@@ -182,7 +169,6 @@
             <li>GET IN TOUCH</li>
             <li><a href="#">(031) 627-5791</a></li>
             <li><a href="#">eg-garden@naver.com</a></li>
-
           </ul>
           <ul>
             <li>

@@ -1,3 +1,25 @@
+//로딩
+#load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 // 헤더
 #header {
   position: absolute;
@@ -844,6 +866,67 @@
     .btn_text-bottom {
       transform: translateY(0%);
       opacity: 1;
+    }
+  }
+}
+
+#list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 3;
+
+  .item {
+    width: calc(100% / 4);
+    margin-bottom: 15px;
+    padding: 7px;
+    transform: translateY(50px);
+    animation: project-ani 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+      }
+    }
+
+    .project_pic {
+      display: block;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 15px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s;
+      }
+    }
+
+    .project_title {
+      a {
+        display: inline-block;
+      }
+
+      h3 {
+        font: 15px/1 'Lexend';
+        margin-bottom: 5px;
+      }
+
+      span {
+        font: 14px/1 'Lexend';
+        opacity: 0.5;
+      }
+    }
+
+    &:hover {
+      .prject_pic > img {
+        transform: scale(1.02);
+      }
     }
   }
 }

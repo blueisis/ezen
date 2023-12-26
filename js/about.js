@@ -1,10 +1,18 @@
+const loading_page = document.getElementById('load')
+window.onload = function () {
+  setTimeout(function () {
+    loading_page.style.opacity = '0'
+    setTimeout(function () {
+      loading_page.style.display = 'none'
+    }, 1000)
+  }, 200)
+}
+
 const worksSec = document.querySelector('#works')
-const teamSec = document.querySelector('#team')
 const base = -350
 
 window.addEventListener('scroll', (e) => {
   scrollMotion(worksSec, worksSec, base)
-  scrollMotion(teamSec, teamSec, base)
 })
 
 function scrollMotion(section, target, base) {

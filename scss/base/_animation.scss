@@ -1,5 +1,5 @@
 // common
-@keyframes visual-title-anime {
+@keyframes title-anime {
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -34,5 +34,12 @@
   100% {
     bottom: 0;
     height: 0;
+  }
+}
+
+@keyframes project-ani {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
