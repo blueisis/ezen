@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ezenhome/contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fd8cd5fc39.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c994b15e1e9da0e0b5d33a1033346fec"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="js/contact.js"></script>
+  </head>
+
+  <body>
+    <div id="load">
+      <img src="./img/loading.gif" alt="loading" />
+    </div>
+
+    <!-- 헤더 -->
+    <header id="header_sub">
+      <div class="inner">
+        <a class="logo" href="index.html">
+          <img src="img/logo-black.png" alt="로고이미지" />
+        </a>
+        <nav class="header-menu">
+          <ul>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="youtube.html">PROJECT</a>
+            </li>
+            <li>
+              <a href="gallery.html">SHOP</a>
+            </li>
+            <li>
+              <a href="community.html">OFFICE</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+            <!-- <li class="menuBtn">
+              <span>menu button</span>
+            </li> -->
+          </ul>
+        </nav>
+        <div class="header-btn-menu">
+          <ul>
+            <li>
+              <a href="about.html">About DLC</a>
+            </li>
+            <li>
+              <a href="youtube.html">Youtube</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="community.html">Community</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="join.html">Join</a>
+            </li>
+          </ul>
+          <button class="menuClose">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 메인 콘텐츠 -->
+    <main class="sub-content contact">
+      <!-- 비주얼 섹션 -->
+      <!-- <section id="visual_sub">
+        <img src="img/garden-img1.jpg" alt="비주얼 이미지">
+
+        <div class="scroll-down">
+          <span>Scroll to explore</span>
+        </div>
+        <p class="scroll-line"></p>
+      </section> -->
+
+      
+    <section id="headquarters">
+      <div class="inner">
+        <!-- <h1>Contact</h1> -->
+        <div id="map"></div>
+        <div class="txts">
+          <div class="txt">
+            <div>
+              <h2>Contact.</h2>
+              <p>Phone<span>+82 10-0000-0000</span></p>
+              <span>eg-garden@naver.com</span>
+            </div>
+          </div>
+          <div class="txt">
+            <div>
+              <h2>Headerquarters.</h2>
+              <p>Phone<span>(031)627-5500</span></p>
+              <span>서울 송파구 위례광장로 188 아이온스퀘어 1001호</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      <!-- contactus 섹션 -->
+      <!-- <section id="contactus">
+        <div class="contact_top">
+          <img src="./img/map.PNG" alt="" />
+          <p>Email eg-garden@naver.com</p>
+          <p>
+            서울지사 ㉾05849 서울시 송파구 위례광장로 188 아이온스퀘어 1001호
+          </p>
+          <p>TEL 031-627-5500 FAX 031-627-5791</p>
+        </div>
+
+        <div class="inner">
+          <div class="con">
+            <p>Take the first step towards discovering your perfect world.</p>
+            <form id="contact-form">
+              <input type="hidden" name="contact_number" />
+              <input type="text" required placeholder="Name" name="user_name" />
+              <input
+                type="text"
+                required
+                placeholder="Mobile Number"
+                name="user_number"
+              />
+              <input
+                type="text"
+                required
+                placeholder="Email Address"
+                name="user_email"
+              />
+              <textarea
+                required
+                placeholder="Write your message here"
+                name="user_message"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <div class="btn-box">
+                <input type="submit" value="Send" />
+                <div class="btn_borders">
+                  <span class="border-top"></span>
+                  <span class="border-right"></span>
+                  <span class="border-bottom"></span>
+                  <span class="border-left"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 백그라운드 라인 -->
+      <div id="back-line">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="project.html">PROJECT</a>
+            </li>
+            <li>
+              <a href="shop.html">SHOP</a>
+            </li>
+            <li>
+              <a href="office.html">OFFICE</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+            <!-- <li class="menuBtn">
+              <span>menu button</span>
+            </li> -->
+          </ul>
+          <ul>
+            <li><a href="#">(031) 627-5791</a></li>
+            <li><a href="#">eg-garden@naver.com</a></li>
+          </ul>
+        </div>
+        <a class="footer-logo" href="#">
+          <img src="img/logo-black.png" alt="로고이미지" />
+        </a>
+        <div class="copyright">
+          &copy; Gardening Group EZEN. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

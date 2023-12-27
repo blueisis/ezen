@@ -1,0 +1,448 @@
+.about {
+  // our-mission 섹션
+  #introduce {
+    padding: 8vw 10vw;
+
+    .inner {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 300px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 3;
+
+      .txt {
+        width: 50%;
+
+        h1 {
+          font: 25px/1 'quasimoda-light';
+          margin-bottom: 40px;
+        }
+
+        p {
+          font: 16px/2 'quasimoda-light';
+          margin-bottom: 40px;
+        }
+      }
+
+      figure {
+        width: 45%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &.on {
+      .inner {
+        opacity: 1;
+        transform: translateY(0);
+
+        &:nth-of-type(2) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  // role 섹션
+  #works {
+    padding: 3vw 10vw 5vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .work {
+      position: relative;
+      width: 50%;
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(100px);
+      z-index: 3;
+      transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+      &:nth-of-type(1) {
+        transition-delay: 0s;
+      }
+      &:nth-of-type(2) {
+        transition-delay: 0.1s;
+      }
+
+      .pic {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        h2 {
+          font: 25px/1 'quasimoda-light';
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+
+        p {
+          font: 15px/1.5 'quasimoda-light';
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &.on {
+      .work {
+        opacity: 1;
+        transform: translateY(0);
+
+        &:nth-of-type(2) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  //figure_about 섹션
+  #figure_about {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+
+    figure {
+      width: 100%;
+      height: 500px;
+      background: url(../../img/figure_about.jpg) repeat right/cover fixed;
+    }
+  }
+
+  // team 섹션
+  #team {
+    .inner {
+      position: relative;
+      width: 100%;
+      z-index: 3;
+
+      h1 {
+        font: 45px/1 'quasimoda-light';
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      > p {
+        width: 60%;
+        margin: 0 auto;
+        font: 15px/2 'quasimoda-light';
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 60px;
+        opacity: 0.7;
+      }
+
+      .members {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 8vw 10vw;
+
+        .member {
+          display: flex;
+          width: 47%;
+          margin-bottom: 40px;
+          transition: 1s;
+
+          &:nth-child(odd) {
+            opacity: 0;
+            transform: translateX(-130px);
+          }
+
+          &:nth-child(even) {
+            opacity: 0;
+            transform: translateX(130px);
+
+            .content {
+              order: 1;
+            }
+
+            .pic .inner {
+              transform: translate(-20px, -20px);
+            }
+          }
+
+          &:nth-of-type(5),
+          &:nth-of-type(6) {
+            margin-bottom: 0;
+          }
+
+          .content {
+            width: 60%;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #eeeeee;
+
+            .label {
+              display: inline-block;
+              font: 15px/1 'quasimoda-light';
+              margin-bottom: 20px;
+              opacity: 0.7;
+            }
+
+            h2 {
+              font: 25px/1 'quasimoda-light';
+              margin-bottom: 20px;
+            }
+
+            p {
+              font: 15px/2 'quasimoda-light';
+              margin-bottom: 40px;
+              opacity: 0.7;
+            }
+
+            a {
+              position: relative;
+              display: inline-block;
+              text-align: center;
+              border: 1px solid rgba(0, 0, 0, 0.3);
+              width: 140px;
+              height: 50px;
+              font: 14px/50px 'quasimoda-light';
+              color: var(--main-color);
+              overflow: hidden;
+
+              .btn_borders {
+                span {
+                  position: absolute;
+                  background: var(--main-color);
+                  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+                }
+
+                .border-top {
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 1px;
+                  transform: scaleX(0);
+                  transform-origin: right;
+                  transition-delay: 0s;
+                }
+
+                .border-bottom {
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 1px;
+                  transform: scaleX(0);
+                  transform-origin: left;
+                  transition-delay: 0.2s;
+                }
+
+                .border-right {
+                  top: 0;
+                  right: 0;
+                  width: 1px;
+                  height: 100%;
+                  transform: scaleY(0);
+                  transform-origin: bottom;
+                  transition-delay: 0.1s;
+                }
+
+                .border-left {
+                  top: 0;
+                  left: 0;
+                  width: 1px;
+                  height: 100%;
+                  transform: scaleY(0);
+                  transform-origin: top;
+                  transition-delay: 0.3s;
+                }
+              }
+
+              .btn_text-top {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 0.75s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+              }
+
+              .btn_text-bottom {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateY(35%);
+                opacity: 0;
+                transition: all 0.25s 0s ease-out;
+              }
+
+              &:hover {
+                .btn_borders {
+                  .border-top {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                  }
+
+                  .border-bottom {
+                    transform: scaleX(1);
+                    transform-origin: right;
+                  }
+
+                  .border-right {
+                    transform: scaleX(1);
+                    transform-origin: top;
+                  }
+
+                  .border-left {
+                    transform: scaleX(1);
+                    transform-origin: bottom;
+                  }
+                }
+
+                .btn_text-top {
+                  transform: translateY(-35%);
+                  opacity: 0;
+                  transition: all 0.25s 0s ease-out;
+                }
+
+                .btn_text-bottom {
+                  transform: translateY(0%);
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          .pic {
+            width: 40%;
+            background: #fff;
+            cursor: pointer;
+
+            .inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              transform: translate(20px, -20px);
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s;
+
+                &:last-child {
+                  opacity: 0;
+                }
+              }
+
+              &:hover {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+                img:last-child {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.on {
+      .inner .members .member {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  }
+}
+@media all and (min-width:768px) and (max-width:1281px) {
+    .about {
+      #introduce {
+        padding: 8vw 10vw;
+    
+        .inner {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 300px;
+          opacity: 0;
+          transform: translateY(40px);
+          transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+          z-index: 3;
+    
+          .txt {
+            width: 50%;
+    
+            h1 {
+              font: 35px/1 'quasimoda-light';
+              margin-bottom: 40px;
+            }
+    
+            p {
+              font: 16px/2 'quasimoda-light';
+              margin-bottom: 40px;
+            }
+
+          }
+    
+          figure {
+            width: 45%;
+            overflow: hidden;
+    
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+    
+        &.on {
+          .inner {
+            opacity: 1;
+            transform: translateY(0);
+    
+            &:nth-of-type(2) {
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+    }
+}

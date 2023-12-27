@@ -1,0 +1,485 @@
+@import '../scss/base/common';
+@import '../scss/base/reset';
+@import '../scss/base/animation';
+
+@import '../scss/sub/about';
+@import '../scss/sub/project';
+@import '../scss/sub/project-detail';
+@import '../scss/sub/shop';
+@import '../scss/sub/contact';
+
+// 메인 콘텐츠
+.main-content {
+  width: 100%;
+  overflow: hidden;
+
+  // 웰컴 섹션
+  #welcome2 {
+    padding: 0 10vw;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .work {
+      position: relative;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      z-index: 3;
+      transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+      &:nth-of-type(1) {
+        transform: translateY(140px);
+        transition-delay: 0.1s;
+      }
+      &:nth-of-type(2) {
+        transition-delay: 0s;
+      }
+
+      .pic {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        h2 {
+          font: 25px/1 'quasimoda-light';
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+
+        p {
+          font: 15px/1.5 'quasimoda-light';
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &.on {
+      .work {
+        opacity: 1;
+        transform: translateY(0);
+
+        &:nth-of-type(1) {
+          transform: translateY(100px);
+        }
+      }
+    }
+  }
+
+  // 슬라이드 섹션
+    #explore {
+    position: relative;
+    width: 100%;
+    margin-bottom: 200px;
+    z-index: 3;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+      .swiper-top {
+        width: 100%;
+        padding: 0 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+
+        h1 {
+          font: 18px/1 'quasimoda-light';
+
+          span {
+            font: 43px/1 'quasimoda-light';
+            letter-spacing: -0.5px;
+          }
+        }
+
+        .swiper-btns {
+          position: relative;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .swiper-button-next {
+            position: static;
+            margin-top: 0;
+            margin-left: 20px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #333;
+          }
+
+          .swiper-button-prev {
+            position: static;
+            margin-top: 0;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #333;
+          }
+
+          .swiper-button-next,
+          .swiper-button-prev {
+            transition: cubic-bezier(0.23, 1, 0.32, 1);
+
+            .left,
+            .right {
+              width: 55px;
+            }
+
+            .left {
+              transform: scaleX(-1);
+            }
+
+            &::after {
+              display: none;
+            }
+
+            &:hover {
+              background: var(--main-color);
+
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-slide {
+        position: relative;
+        height: 60vh;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        text-align: left;
+        display: flex;
+        overflow: hidden;
+
+        &::after {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .under {
+          position: absolute;
+          left: 40px;
+          bottom: 40px;
+          z-index: 2;
+
+          h2 {
+            font: 20px/1 'quasimoda-light';
+            color: #fff;
+            margin-bottom: 10px;
+          }
+
+          span {
+            font: 15px/1 'quasimoda-light';
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+
+  // 수직정원 섹션
+  #landof {
+    position: relative;
+    width: 100%;
+    padding: 60px 15vw;
+    background: url(../img/verticalgarden-img1.jpg) no-repeat center/cover fixed;
+    margin-bottom: 200px;
+    z-index: 3;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .inner {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+
+      .top-contents {
+        width: 100%;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        .pic_first {
+          position: relative;
+          height: 500px;
+          transform: translate(-150px);
+          opacity: 0;
+          transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+          .pic {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 3;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+
+            &:hover img {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .txts {
+          display: flex;
+          flex-direction: column;
+          padding: 0 30px;
+          transform: translateX(150px);
+          opacity: 0;
+          transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+          h2 {
+            margin-bottom: 25px;
+
+            a {
+              font: 40px/1 'quasimoda-light';
+              color: inherit;
+            }
+          }
+
+          .country-name {
+            display: inline-block;
+            font: 15px/1 'quasimoda-light';
+            color: inherit;
+            margin-bottom: 25px;
+            opacity: 0.7;
+          }
+
+          .button {
+            border: 1px solid white;
+
+            .btn_borders {
+              span {
+                background: white;
+              }
+            }
+
+            .btn_text-top, .btn_text-bottom {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .con {
+        order: 1;
+      }
+    }
+
+    &.on {
+      .inner .top-contents .pic_first {
+        transform: translate(-80px);
+        opacity: 1;
+      }
+
+      .inner .top-contents .txts {
+        transform: translateX(0px);
+        opacity: 1;
+        transition-delay: 0.1s;
+      }
+    }
+  }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1281px) {
+  .main-content {
+      // 슬라이드 섹션
+    #explore {
+    
+      .swiper {
+        .swiper-slide {
+          height: 70vh;
+        }
+      }
+    }
+
+      // 수직정원 섹션
+    #landof {
+      .inner {
+
+        .top-contents {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+
+          .pic_first {
+            height: 50vh;
+          }
+
+          .txts {
+            h2 {
+              margin-bottom: 20px;
+
+              a {
+                font: 30px/1 'quasimoda-light';
+              }
+            }
+
+            .country-name {
+              margin-bottom: 25px;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+   }
+  }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+  .main-content {
+    // 웰컴 섹션
+    #welcome2 {
+      margin-bottom: 100px;
+      flex-direction: column;
+      justify-content: center;
+  
+      .work {
+        width: 100%;
+        margin-bottom: 0px;
+  
+        &:nth-of-type(1) {
+          transform: translateY(40px);
+        margin-bottom: 40px;
+        }
+      }
+  
+      &.on {
+        .work {
+          &:nth-of-type(1) {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+
+    #explore {
+    
+      .swiper {
+
+        .swiper-top {
+          margin-bottom: 50px;
+        }
+  
+        .swiper-slide {
+          height: 70vh;
+  
+        }
+      }
+    }
+
+    #landof {
+      .inner {
+  
+        .top-contents {
+          flex-direction: column;
+
+          .pic_first {
+            width: 100%;
+            height: 50vh;
+            margin-bottom: 30px;
+
+        }
+
+          
+        .txts {
+          width: 100%; 
+          padding: 0px;
+
+          h2 {
+            margin-bottom: 10px;
+
+            a {
+              font: 16px/1 'quasimoda-light';
+            }
+          }
+
+          .country-name {
+            margin-bottom: 0;
+          }
+
+          .button {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.on {
+      .inner .top-contents .pic_first {
+        transform: translate(0px);
+      }
+    }
+  }
+}
+}

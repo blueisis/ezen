@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ezenhome/home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/fd8cd5fc39.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="load">
+    <img src="./img/loading.gif" alt="loading" />
+  </div>
+
+  <!-- 헤더 -->
+  <header id="header">
+    <div class="inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="로고이미지" />
+      </a>
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="project.html">PROJECT</a>
+          </li>
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <li class="menuBtn">
+            <span>menu button</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-btn-menu">
+        <ul>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="project.html">PROJECT</a>
+          </li>
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <li class="menuBtn">
+            <span>menu button</span>
+          </li>
+        </ul>
+        <button class="menuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main class="main-content">
+    <!-- 비주얼 섹션 -->
+    <section id="visual">
+      <!-- <img
+          clss="visual_img"
+          src="img/P20231017_121013637_78CA6D0D-CB81-4A81-9504-C3A07E31449D.jpg"
+          alt="비주얼 이미지"
+        /> -->
+      <video src="img/garden-video.mp4" autoplay loop muted></video>
+
+      <div class="inner">
+        <!-- <h1>
+            <span>Discover</span>
+            <div class="bot">
+              <span>your world</span>
+            </div>
+          </h1> -->
+      </div>
+      <div class="scroll-down">
+        <span>Scroll to explore</span>
+      </div>
+      <p class="scroll-line"></p>
+    </section>
+
+    <!-- 웰컴 섹션 -->
+    <section id="welcome2">
+      <div class="work">
+        <div class="pic">
+          <img src="img/garden-img3.JPG" alt="works 이미지" />
+        </div>
+        <div class="content">
+          <h2>Experiences</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            cumque necessitatibus mollitia autem minima et, totam nesciunt,
+            tempore suscipit blanditiis sint tempora labore enim cupiditate.
+          </p>
+        </div>
+      </div>
+      <div class="work">
+        <div class="pic">
+          <img src="img/garden-img7.jpg" alt="works 이미지" />
+        </div>
+        <div class="content">
+          <h2>Wellness</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            non libero sint corrupti porro fugiat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 슬라이드 섹션 -->
+    <section id="explore">
+      <div class="swiper mySwiper">
+        <div class="swiper-top">
+          <h1>PROJECTS<br /></h1>
+          <div class="swiper-btns">
+            <div class="swiper-button-prev">
+              <img class="left" src="./img/화살표.PNG" alt="왼쪽 이동 버튼" />
+            </div>
+            <div class="swiper-button-next">
+              <img class="right" src="./img/화살표.PNG" alt="오른쪽 이동 버튼" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/planter-img1.jpg" alt="프로젝트 이미지" />
+            <div class="under">
+              <h2>석촌호수</h2>
+              <span>Seokchon Lake / Garden</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img2.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Driftwood</h2>
+              <span>Austin, Texas</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img3.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Troubadour</h2>
+              <span>Nashville, Tennessee</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img4.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Playa Grande</h2>
+              <span>Rio San Juan, Dominican Republic</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img5.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Chileno Bay</h2>
+              <span>Cabo San Lucas, Mexico</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img6.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>The Summit</h2>
+              <span>Las Vegas, Nevada</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img7.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Dune Deck</h2>
+              <span>Westhampton Beach, NY</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garden-img8.JPG" alt="explore 여행지 이미지" />
+            <div class="under">
+              <h2>Dune Deck</h2>
+              <span>Westhampton Beach, NY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수직정원 섹션 -->
+    <section id="landof">
+      <div class="inner">
+        <!-- <h1>VARTICAL GARDEN</h1> -->
+        <div>
+          <div class="top-contents">
+            <div class="pic_first">
+              <div class="pic">
+                <img src="img/verticalgarden-img1.jpg" alt="휴양지 이미지" />
+              </div>
+            </div>
+            <div class="txts">
+              <h2>
+                <a href="#">Vartical Garden, BYFORE</a>
+              </h2>
+              <span class="country-name"> Vartical Garden </span>
+
+              <!-- <ul class="weather">
+                <li>
+                  <i class="far fa-sun"></i>
+                  <span>73 °F</span>
+                </li>
+                <li>
+                  <i class="fas fa-wind"></i>
+                  <span>7.05 mph</span>
+                </li>
+                <li>
+                  <i class="far fa-compass"></i>
+                  <span>36°</span>
+                </li>
+              </ul> -->
+              <a class="button" href="#">
+                <div class="btn_borders">
+                  <span class="border-top"></span>
+                  <span class="border-right"></span>
+                  <span class="border-bottom"></span>
+                  <span class="border-left"></span>
+                </div>
+                <div class="btn_text-top">MORE</div>
+                <div class="btn_text-bottom">MORE</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 백그라운드 라인 -->
+    <div id="back-line">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="inner">
+      <div class="footer-menu">
+        <ul>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="project.html">PROJECT</a>
+          </li>
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="office.html">OFFICE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <!-- <li class="menuBtn">
+              <span>menu button</span>
+            </li> -->
+        </ul>
+        <ul>
+          <li><a href="#">(031) 627-5791</a></li>
+          <li><a href="#">eg-garden@naver.com</a></li>
+        </ul>
+      </div>
+      <a class="footer-logo" href="#">
+        <img src="img/logo-black.png" alt="로고이미지" />
+      </a>
+      <div class="copyright">
+        &copy; Gardening Group EZEN. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ezenhome/about</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd8cd5fc39.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/project-detail.js"></script>
+  </head>
+  `
+  <body>
+    <div id="load">
+      <img src="./img/loading.gif" alt="loading" />
+    </div>
+
+    <!-- 헤더 -->
+    <header id="header_sub">
+      <div class="inner">
+        <a class="logo" href="index.html">
+          <img src="img/logo-black.png" alt="로고이미지" />
+        </a>
+        <nav class="header-menu">
+          <ul>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="youtube.html">PROJECT</a>
+            </li>
+            <li>
+              <a href="gallery.html">SHOP</a>
+            </li>
+            <li>
+              <a href="community.html">OFFICE</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+            <li class="menuBtn">
+              <span>menu button</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-btn-menu">
+          <ul>
+            <li>
+              <a href="about.html">About DLC</a>
+            </li>
+            <li>
+              <a href="youtube.html">Youtube</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="community.html">Community</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="join.html">Join</a>
+            </li>
+          </ul>
+          <button class="menuClose">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="sub-content project-detail">
+      <!-- 프로젝트 섹션 -->
+      <section id="pj-detail">
+        <div class="title">
+          <h3>부천 미도어린이공원</h3>
+          <span>SEOUL BOTANIC PARK</span><br />
+          <span>16 Sep. 2023</span>
+          <p class="scroll-line"></p>
+        </div>
+        <div class="inner">
+          <a class="pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <a class="pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+          <a class="pic">
+            <img src="img/garden-img1.jpg" alt="갤러리 이미지" />
+          </a>
+        </div>
+      </section>
+
+      <!-- 컨택트 섹션
+      <section id="contact">
+        <div class="inner">
+            <div class="txts">
+              <h2>031-000-000</h2>
+              <p>E-mail eg-garden@naver.com</p>
+            </div>
+            <a href="#" class="button">
+              <div class="btn_borders">
+                <span class="border-top"></span>
+                <span class="border-right"></span>
+                <span class="border-bottom"></span>
+                <span class="border-left"></span>
+              </div>
+              <div class="btn_text-top">CONTACT FORM</div>
+              <div class="btn_text-bottom">CONTACT FORM</div>
+            </a>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 이미지 팝업 -->
+      <div class="popup-img">
+        <img src="./img/garden-img1.jpg" alt="프로젝트 슬라이드 팝업 이미지" />
+        <button class="arrow-left">
+          <img src="./img/화살표.png" alt="" />
+        </button>
+        <button class="arrow-right">
+          <img src="./img/화살표.png" alt="" />
+        </button>
+        <button onclick="" class="xmark"></button>
+      </div>
+
+      <!-- 백그라운드 라인 -->
+      <div id="back-line">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="project.html">PROJECT</a>
+            </li>
+            <li>
+              <a href="shop.html">SHOP</a>
+            </li>
+            <li>
+              <a href="office.html">OFFICE</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+            <!-- <li class="menuBtn">
+              <span>menu button</span>
+            </li> -->
+          </ul>
+          <ul>
+            <li><a href="#">(031) 627-5791</a></li>
+            <li><a href="#">eg-garden@naver.com</a></li>
+          </ul>
+        </div>
+        <a class="footer-logo" href="#">
+          <img src="img/logo-black.png" alt="로고이미지" />
+        </a>
+        <div class="copyright">
+          &copy; Gardening Group EZEN. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
