@@ -12,7 +12,7 @@
   z-index: 1000;
   text-align: center;
   opacity: 1;
-  transition: opacity 0.7s ease-in-out;
+  transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
 
   img {
     width: 70px;
@@ -56,7 +56,7 @@
           a {
             position: relative;
             display: block;
-            font: 20px/1 'Lexend';
+            font: 20px/1 'quasimoda-light';
             color: #fff;
             letter-spacing: 3px;
 
@@ -157,7 +157,7 @@
           a {
             position: relative;
             display: inline-block;
-            font: 40px/1 'gt-sectra';
+            font: 40px/1 'quasimoda-light';
             color: #fff;
 
             &::after {
@@ -243,7 +243,7 @@
           a {
             position: relative;
             display: block;
-            font: 20px/1 'Lexend';
+            font: 20px/1 'quasimoda-light';
             color: var(--main-color);
             letter-spacing: 3px;
 
@@ -344,7 +344,7 @@
           a {
             position: relative;
             display: inline-block;
-            font: 40px/1 'gt-sectra';
+            font: 40px/1 'quasimoda-light';
             color: var(--main-color);
 
             &::after {
@@ -421,7 +421,7 @@
     color: #fff;
 
     span {
-      font: 15px/1 'messina-sans';
+      font: 15px/1 'quasimoda-light';
       color: rgba(255, 255, 255, 0.7);
       margin-top: 20px;
     }
@@ -454,7 +454,7 @@
 #contact {
   position: relative;
   width: 100%;
-  padding: 250px 15vw;
+  padding: 250px 12vw;
   z-index: 3;
 
   .inner {
@@ -463,21 +463,20 @@
     align-items: center;
     padding: 0 300px;
     height: 300px;
-    background: url(../img/bg-green.gif);
     background-repeat: repeat;
     z-index: 2;
 
     .txts {
       h2 {
-        font: 40px/50px 'Lexend';
-        font-weight: 200;
-        margin-bottom: 20px;
-        letter-spacing: 4px;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
       }
       p {
-        font: 14px/1 'Lexend';
+        font: 14px/1 'quasimoda-light';
         font-weight: 200;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
     }
 
@@ -488,10 +487,10 @@
       border: 1px solid rgba(0, 0, 0, 0.3);
       width: 400px;
       height: 70px;
-      font: 12px/50px 'Lenxd';
-      letter-spacing: 3px;
-      color: var(--main-color);
+      font: 12px/50px 'quasimoda-light';
+      color: white;
       overflow: hidden;
+      background-color: #cbcbcb;
 
       .btn_borders {
         span {
@@ -619,8 +618,7 @@
 #footer {
   position: relative;
   width: 100%;
-  padding: 5vw 10vw;
-  // background: #333;
+  padding: 2vw 8vw;
   z-index: 3;
 
   .inner {
@@ -637,25 +635,46 @@
     }
 
     .footer-menu {
-      margin-bottom: 50px;
       display: flex;
+      flex-direction: column;
       justify-content: right;
 
       ul {
         float: right;
         position: relative;
-        margin-left: 110px;
+        margin-right: 150px;
+
+        &:first-child {
+          display: flex;
+          margin-bottom: 30px;
+
+          li {
+            margin-right: 50px;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 120px;
+          li {
+            margin-bottom: 10px;
+            a {
+              letter-spacing: 0.5px;
+              font: 14px/1.5 'quasimoda-light';
+            }
+          }
+        }
 
         li {
-          font: 15px/1 'Lexend';
+          font: 15px/1 'quasimoda-light';
           letter-spacing: 3px;
-          margin-bottom: 18px;
+          margin-bottom: 15px;
 
           a {
             position: relative;
             display: inline-block;
-            font: 15px/1 'messina-sans';
+            font: 14px/1.5 'quasimoda-light';
             color: var(--main-color);
+            letter-spacing: 2px;
 
             &::after {
               content: '';
@@ -680,14 +699,8 @@
           }
         }
 
-        &:nth-of-type(1) {
-          li:nth-of-type(1) {
-            font: 11px/1 'messina-sans';
-            color: var(--main-color);
-            opacity: 0.5;
-          }
-
-          li:nth-of-type(3) {
+        &:nth-of-type(2) {
+          li:nth-of-type(2) {
             a {
               &::after {
                 transform: scaleX(1);
@@ -700,9 +713,8 @@
 
     .copyright {
       width: 100%;
-      font: 13px/1 'messina-sans';
-      color: var(--main-color);
-      opacity: 0.7;
+      font: 12px/1 'quasimoda-light';
+      color: #333;
     }
   }
 }
@@ -753,7 +765,7 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0 100px;
   height: 65px;
-  font: 12px/50px 'Lenxd';
+  font: 12px/50px 'quasimoda-light';
   letter-spacing: 3px;
   color: var(--main-color);
   overflow: hidden;
@@ -882,13 +894,13 @@
     margin-bottom: 15px;
     padding: 7px;
     transform: translateY(50px);
-    animation: project-ani 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation: project-ani 2.5s cubic-bezier(0.23, 1, 0.32, 1);
     animation-fill-mode: forwards;
     opacity: 0;
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
-        animation-delay: 0.1s * $i;
+        animation-delay: 0.18s * $i;
       }
     }
 
@@ -913,12 +925,12 @@
       }
 
       h3 {
-        font: 15px/1 'Lexend';
+        font: 15px/1 'quasimoda-light';
         margin-bottom: 5px;
       }
 
       span {
-        font: 14px/1 'Lexend';
+        font: 14px/1 'quasimoda-light';
         opacity: 0.5;
       }
     }
@@ -945,7 +957,7 @@
       a {
         position: relative;
         display: block;
-        font: 20px/1 'Lexend';
+        font: 20px/1 'quasimoda-light';
         color: #333;
         letter-spacing: 3px;
 
@@ -1120,7 +1132,7 @@ aside#popup {
       color: #fff;
 
       h2 {
-        font: bold 30px/1 'gt-sectra';
+        font: bold 30px/1 'quasimoda-light';
         margin-bottom: 4vw;
 
         svg {
@@ -1129,7 +1141,7 @@ aside#popup {
       }
 
       p {
-        font: 16px/1.5 'IBM Plex Sans KR';
+        font: 16px/1.5 'quasimoda-light';
         margin-bottom: 25px;
         transform: translateY(20px);
         opacity: 0;
@@ -1192,7 +1204,7 @@ aside#popup {
         display: flex;
         justify-content: center;
         align-items: center;
-        font: 300 14px/1 'messina-sans';
+        font: 300 14 'quasimoda-light' px/1;
         cursor: pointer;
         margin-left: 10px;
         color: #fff;
@@ -1207,7 +1219,7 @@ aside#popup {
 
       span {
         position: relative;
-        font: 15px/1 'messina-sans';
+        font: 15px/1 'quasimoda-light';
         color: #fff;
 
         &::after {

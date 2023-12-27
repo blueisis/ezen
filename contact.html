@@ -10,16 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- 스와이퍼 -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/fd8cd5fc39.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fd8cd5fc39.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c994b15e1e9da0e0b5d33a1033346fec"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="js/contact.js"></script>
   </head>
 
@@ -84,6 +78,7 @@
       </div>
     </header>
 
+
     <!-- 메인 콘텐츠 -->
     <main class="sub-content contact">
       <!-- 비주얼 섹션 -->
@@ -96,8 +91,31 @@
         <p class="scroll-line"></p>
       </section> -->
 
+      
+    <section id="headquarters">
+      <div class="inner">
+        <!-- <h1>Contact</h1> -->
+        <div id="map"></div>
+        <div class="txts">
+          <div class="txt">
+            <div>
+              <h2>Contact.</h2>
+              <p>Phone<span>+82 10-0000-0000</span></p>
+              <span>eg-garden@naver.com</span>
+            </div>
+          </div>
+          <div class="txt">
+            <div>
+              <h2>Headerquarters.</h2>
+              <p>Phone<span>(031)627-5500</span></p>
+              <span>서울 송파구 위례광장로 188 아이온스퀘어 1001호</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
       <!-- contactus 섹션 -->
-      <section id="contactus">
+      <!-- <section id="contactus">
         <div class="contact_top">
           <img src="./img/map.PNG" alt="" />
           <p>Email eg-garden@naver.com</p>
@@ -108,7 +126,6 @@
         </div>
 
         <div class="inner">
-          <!-- <img src="img/garden-img1.jpg"> -->
           <div class="con">
             <p>Take the first step towards discovering your perfect world.</p>
             <form id="contact-form">
@@ -145,7 +162,7 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- 백그라운드 라인 -->
       <div id="back-line">
@@ -161,27 +178,19 @@
     <!-- 푸터 -->
     <footer id="footer">
       <div class="inner">
-        <a class="footer-logo" href="#">
-          <img src="img/logo-black.png" alt="로고이미지" />
-        </a>
         <div class="footer-menu">
-          <ul>
-            <li>GET IN TOUCH</li>
-            <li><a href="#">(031) 627-5791</a></li>
-            <li><a href="#">eg-garden@naver.com</a></li>
-          </ul>
           <ul>
             <li>
               <a href="about.html">ABOUT</a>
             </li>
             <li>
-              <a href="youtube.html">PROJECT</a>
+              <a href="project.html">PROJECT</a>
             </li>
             <li>
-              <a href="gallery.html">SHOP</a>
+              <a href="shop.html">SHOP</a>
             </li>
             <li>
-              <a href="community.html">OFFICE</a>
+              <a href="office.html">OFFICE</a>
             </li>
             <li>
               <a href="contact.html">CONTACT</a>
@@ -190,7 +199,14 @@
               <span>menu button</span>
             </li> -->
           </ul>
+          <ul>
+            <li><a href="#">(031) 627-5791</a></li>
+            <li><a href="#">eg-garden@naver.com</a></li>
+          </ul>
         </div>
+        <a class="footer-logo" href="#">
+          <img src="img/logo-black.png" alt="로고이미지" />
+        </a>
         <div class="copyright">
           &copy; Gardening Group EZEN. All rights reserved.
         </div>

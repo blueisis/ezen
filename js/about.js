@@ -9,10 +9,13 @@ window.onload = function () {
 }
 
 const worksSec = document.querySelector('#works')
-const base = -350
+const introduceSec = document.querySelector('#introduce')
+const base = -1000
+const base2 = -1000
 
 window.addEventListener('scroll', (e) => {
   scrollMotion(worksSec, worksSec, base)
+  scrollMotion(introduceSec, introduceSec, base2)
 })
 
 function scrollMotion(section, target, base) {

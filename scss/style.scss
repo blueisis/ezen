@@ -50,7 +50,7 @@
         }
 
         span {
-          font: 84px/1 'gt-sectra';
+          font: 84px/1 'quasimoda-light';
           letter-spacing: 1px;
           text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
           transform: translateY(50px);
@@ -60,7 +60,7 @@
         .bot {
           span {
             display: inline-block;
-            font: 78px/1 'gotham_t';
+            font: 78px/1 'quasimoda-light';
             text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
             margin-top: -15px;
             transform: translateY(50px);
@@ -81,7 +81,7 @@
       color: #fff;
 
       span {
-        font: 15px/1 'messina-sans';
+        font: 15px/1 'quasimoda-light';
         color: rgba(255, 255, 255, 0.7);
         margin-top: 20px;
       }
@@ -105,12 +105,12 @@
         align-items: center;
 
         h2 {
-          font: 15px/1 'messina-sans';
+          font: 15px/1 'quasimoda-light';
           color: #fff;
         }
 
         span {
-          font: 15px/1 'messina-sans_t';
+          font: 15px/1 'quasimoda-light';
           color: #fff;
           cursor: pointer;
         }
@@ -159,18 +159,16 @@
       flex-direction: column;
       margin-bottom: 20px;
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(40px);
       z-index: 3;
-      transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
 
       &:nth-of-type(1) {
-        transition-delay: 0s;
-      }
-      &:nth-of-type(2) {
+        transform: translateY(140px);
         transition-delay: 0.1s;
       }
-      &:nth-of-type(3) {
-        transition-delay: 0.2s;
+      &:nth-of-type(2) {
+        transition-delay: 0s;
       }
 
       .pic {
@@ -191,13 +189,13 @@
         height: 100%;
 
         h2 {
-          font: 25px/1 'Lexend';
+          font: 25px/1 'quasimoda-light';
           margin-bottom: 20px;
           letter-spacing: 0.5px;
         }
 
         p {
-          font: 15px/1.5 'Lexend';
+          font: 15px/1.5 'quasimoda-light';
           opacity: 0.7;
         }
       }
@@ -209,7 +207,7 @@
         transform: translateY(0);
 
         &:nth-of-type(1) {
-          margin-top: 100px;
+          transform: translateY(100px);
         }
       }
     }
@@ -257,7 +255,7 @@
 
   //         span {
   //           position: relative;
-  //           font: 12px/1.5 'Lexend';
+  //           font: 12px/1.5;
   //           color: white;
   //           z-index: 10;
   //         }
@@ -322,10 +320,10 @@
         margin-bottom: 80px;
 
         h1 {
-          font: 18px/1 'Lexend';
+          font: 18px/1 'quasimoda-light';
 
           span {
-            font: 43px/1 'gotham';
+            font: 43px/1 'quasimoda-light';
             letter-spacing: -0.5px;
           }
         }
@@ -368,7 +366,7 @@
 
           .swiper-button-next,
           .swiper-button-prev {
-            transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: cubic-bezier(0.23, 1, 0.32, 1);
 
             .left,
             .right {
@@ -428,13 +426,13 @@
           z-index: 2;
 
           h2 {
-            font: 20px/1 'gt-sectra';
+            font: 20px/1 'quasimoda-light';
             color: #fff;
             margin-bottom: 10px;
           }
 
           span {
-            font: 15px/1 'messina-sans';
+            font: 15px/1 'quasimoda-light';
             color: #fff;
           }
         }
@@ -454,6 +452,7 @@
     width: 100%;
     padding: 60px 15vw;
     background: url(../img/verticalgarden-img1.jpg) no-repeat center/cover fixed;
+    margin-bottom: 200px;
     z-index: 3;
 
     &::after {
@@ -473,12 +472,12 @@
       z-index: 2;
 
       h1 {
-        font: 45px/1 'gt-sectra';
+        font: 45px/1 'quasimoda-light';
         color: #fff;
         margin-bottom: 105px;
 
         span {
-          font: 43px/1 'gotham';
+          font: 43px/1 'quasimoda-light';
           letter-spacing: -0.5px;
         }
       }
@@ -494,7 +493,7 @@
           height: 500px;
           transform: translate(-150px);
           opacity: 0;
-          transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
 
           .pic {
             position: relative;
@@ -528,14 +527,14 @@
             margin-bottom: 25px;
 
             a {
-              font: 40px/1 'gt-sectra';
+              font: 40px/1 'quasimoda-light';
               color: inherit;
             }
           }
 
           .country-name {
             display: inline-block;
-            font: 15px/1 'messina-sans_t';
+            font: 15px/1 'quasimoda-light';
             color: inherit;
             margin-bottom: 25px;
             opacity: 0.7;
@@ -548,7 +547,7 @@
             border: 1px solid white;
             width: 200px;
             height: 60px;
-            font: 14px/50px 'messina-sans_t';
+            font: 14px/50px 'quasimoda-light';
             color: inherit;
             overflow: hidden;
 
@@ -684,45 +683,4 @@
       }
     }
   }
-
-  // // 컴퍼니 섹션
-  // #company {
-  //   position: relative;
-  //   width: 100%;
-  //   padding: 8vw 10vw 0;
-  //   z-index: 3;
-
-  //   h1 {
-  //     font: 45px/1 'gt-sectra';
-  //     margin-bottom: 80px;
-  //     text-align: center;
-  //   }
-
-  //   .swiper-slide {
-  //     text-align: center;
-
-  //     img {
-  //       width: 300px;
-  //       height: 350px;
-  //       object-fit: cover;
-  //       object-position: 0% 25%;
-  //       margin-bottom: 40px;
-  //       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  //     }
-
-  //     .txts {
-  //       width: 300px;
-  //       margin: 0 auto;
-
-  //       h2 {
-  //         font: 30px/1 'gt-sectra';
-  //         margin-bottom: 40px;
-  //       }
-
-  //       span {
-  //         font: 15px/2 'messina-sans';
-  //       }
-  //     }
-  //   }
-  // }
 }

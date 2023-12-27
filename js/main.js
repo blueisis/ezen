@@ -1,4 +1,5 @@
 const loading_page = document.getElementById('load')
+
 window.onload = function () {
   setTimeout(function () {
     loading_page.style.opacity = '0'
@@ -16,7 +17,7 @@ const swiper = new Swiper('.mySwiper', {
   centeredSlides: true,
   loop: true,
   loopAdditionalSlides: 1,
-  speed: 2000,
+  speed: 2500,
   loopFillGroupWithBlank: false, //그룹수가 맞지 않을 경우 빈칸으로
   grabCursor: true, //스와이프시 마우스 커서모양 변경
   autoplay: {
